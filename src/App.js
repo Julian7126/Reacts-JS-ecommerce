@@ -1,7 +1,7 @@
 import  React   from 'react';
-import { Header } from "./componentes/Header";
 import { ProductosLista } from "./componentes/productos/index";
 import NavBar from './componentes/NavBar';
+import 'boxicons';
 
 function App() {
   return (
