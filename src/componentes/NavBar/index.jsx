@@ -1,6 +1,9 @@
 import React from "react";
 import './styles.css';
-import Nike from '../../images/Nike.jpg';
+import Satan from '../../images/Satan.jpg';
+
+
+
 
 const NavBar = () => {
     return (
@@ -13,7 +16,7 @@ const NavBar = () => {
                     
                     <a href="#">
                         <div className="Logo">
-                            <img src={Nike} alt="" />
+                            <img src={Satan} alt="Logo" width={120} />
                         </div>
                     </a>
 
@@ -31,7 +34,7 @@ const NavBar = () => {
 
                 <div className="cart"></div>
                 <box-icon name="cart"></box-icon>
-                <span className="Total">0</span>
+                <span className="item__total">0</span>
 
         </header>
 
