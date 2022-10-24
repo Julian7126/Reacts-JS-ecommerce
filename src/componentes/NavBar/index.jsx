@@ -32,9 +32,10 @@ const NavBar = () => {
                     </li>
         </ul>
 
-                <div className="cart"></div>
+                <div className="cart">
                 <box-icon name="cart"></box-icon>
                 <span className="item__total">0</span>
+                </div>
 
         </header>
 
