@@ -1,6 +1,7 @@
 import React from "react";
 import './styles.css';
 import Satan from '../../images/Satan.jpg';
+import CartWidget from "../CartWidget";
 
 
 
@@ -31,11 +32,8 @@ const NavBar = () => {
                         <a href="#">About</a>
                     </li>
         </ul>
-
-                <div className="cart">
-                <box-icon name="cart"></box-icon>
-                <span className="item__total">0</span>
-                </div>
+        <CartWidget/>
+                    
 
         </header>
 
