@@ -10,7 +10,10 @@ function App() {
   return (
     <div className='App'>
     <NavBar/>
-    <ItemListConteiner greeting={"Bienvenidos a Cervo"}/>
+    {/* <ItemListConteiner greeting={"Bienvenidos a Cervo"}/> */}
+    <ProductosLista/>
+    <ItemListConteiner/>
+
     </div>
   );
 }
