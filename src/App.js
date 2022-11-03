@@ -4,15 +4,18 @@ import NavBar from './componentes/NavBar';
 import 'boxicons';
 import './index.css';
 import ItemListConteiner from './conteiners/ItemListConteiner';
+import Router from './routes';
+
 
 
 function App() {
   return (
     <div className='App'>
-    <NavBar/>
-    {/* <ItemListConteiner greeting={"Bienvenidos a Cervo"}/> */}
+    {/* <NavBar/>
     <ProductosLista/>
     <ItemListConteiner/>
+     */}
+     <Router/>
 
     </div>
   );

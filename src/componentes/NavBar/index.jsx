@@ -2,6 +2,7 @@ import React from "react";
 import './styles.css';
 import Satan from '../../images/Satan.jpg';
 import CartWidget from "../CartWidget";
+import {Link} from 'react-router-dom';
 
 
 
@@ -23,7 +24,7 @@ const NavBar = () => {
 
         <ul>
                     <li>
-                        <a href="#">Home</a>
+                        <Link to="/">Home</Link>
                     </li>
                     <li>
                         <a href="#">Contact</a>
