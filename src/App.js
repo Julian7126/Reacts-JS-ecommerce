@@ -3,7 +3,7 @@ import { ProductosLista } from "./componentes/productos/index";
 import NavBar from './componentes/NavBar';
 import 'boxicons';
 import './index.css';
-import ItemListConteiner from './conteiners/ItemListConteiner';
+import ItemListConteiner from './conteiners/ItemListContainer';
 import Router from './routes';
 
 
@@ -11,11 +11,10 @@ import Router from './routes';
 function App() {
   return (
     <div className='App'>
-    {/* <NavBar/>
-    <ProductosLista/>
+    <NavBar/>
+    {/* <ProductosLista/> */}
     <ItemListConteiner/>
-     */}
-     <Router/>
+    <Router/>
 
     </div>
   );
