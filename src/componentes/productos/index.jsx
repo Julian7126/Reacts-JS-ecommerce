@@ -1,60 +1,32 @@
-import React from 'react'
-import IMG from '../../images/img01.jpg';
+// import React from 'react'
+// import IMG from '../../images/img01.jpg';
 
-export const ProductosLista = () => {
-  return (
-    <>
+// export const ProductosLista = () => {
+//   return (
+//     <>
 
-      <h1 className='title'> PRODUCTOS </h1>
-      <div className='productos'>
-        <div className='producto'>
-          <a href="#">
-            <div className='producto_img'>
-              <img src={IMG} alt="" />
-            </div>
-          </a>
-          <div className="producto_footer">
-            <h1> Title </h1>
-            <p> Categoria</p>
-            <p className='price'> $250</p>
-          </div>
-          <div className="buttom">
-            <button className='btn'>
-              Añadir al carrito
-            </button>
-            <div>
-              <a href="#" className='btn'> Vista</a>
-            </div>
-          </div>
-        </div>
-
-
-
-
-
-
-
-
-        <div className='producto'>
-          <a href="#">
-            <div className='producto_img'>
-              <img src={IMG} alt="" />
-            </div>
-          </a>
-          <div className="producto_footer">
-            <h1> Title </h1>
-            <p> Categoria</p>
-            <p className='price'> $250</p>
-          </div>
-          <div className="buttom">
-            <button className='btn'>
-              Añadir al carrito
-            </button>
-            <div>
-              <a href="#" className='btn'> Vista</a>
-            </div>
-          </div>
-        </div>
+//       <h1 className='title'> PRODUCTOS </h1>
+//       <div className='productos'>
+//         <div className='producto'>
+//           <a href="#">
+//             <div className='producto_img'>
+//               <img src={IMG} alt="" />
+//             </div>
+//           </a>
+//           <div className="producto_footer">
+//             <h1> Title </h1>
+//             <p> Categoria</p>
+//             <p className='price'> $250</p>
+//           </div>
+//           <div className="buttom">
+//             <button className='btn'>
+//               Añadir al carrito
+//             </button>
+//             <div>
+//               <a href="#" className='btn'> Vista</a>
+//             </div>
+//           </div>
+//         </div>
 
 
 
@@ -63,29 +35,26 @@ export const ProductosLista = () => {
 
 
 
-
-
-
-        <div className='producto'>
-          <a href="#">
-            <div className='producto_img'>
-              <img src={IMG} alt="" />
-            </div>
-          </a>
-          <div className="producto_footer">
-            <h1> Title </h1>
-            <p> Categoria</p>
-            <p className='price'> $250</p>
-          </div>
-          <div className="buttom">
-            <button className='btn'>
-              Añadir al carrito
-            </button>
-            <div>
-              <a href="#" className='btn'> Vista</a>
-            </div>
-          </div>
-        </div>
+//         <div className='producto'>
+//           <a href="#">
+//             <div className='producto_img'>
+//               <img src={IMG} alt="" />
+//             </div>
+//           </a>
+//           <div className="producto_footer">
+//             <h1> Title </h1>
+//             <p> Categoria</p>
+//             <p className='price'> $250</p>
+//           </div>
+//           <div className="buttom">
+//             <button className='btn'>
+//               Añadir al carrito
+//             </button>
+//             <div>
+//               <a href="#" className='btn'> Vista</a>
+//             </div>
+//           </div>
+//         </div>
 
 
 
@@ -97,29 +66,26 @@ export const ProductosLista = () => {
 
 
 
-
-
-
-        <div className='producto'>
-          <a href="#">
-            <div className='producto_img'>
-              <img src={IMG} alt="" />
-            </div>
-          </a>
-          <div className="producto_footer">
-            <h1> Title </h1>
-            <p> Categoria</p>
-            <p className='price'> $250</p>
-          </div>
-          <div className="buttom">
-            <button className='btn'>
-              Añadir al carrito
-            </button>
-            <div>
-              <a href="#" className='btn'> Vista</a>
-            </div>
-          </div>
-        </div>
+//         <div className='producto'>
+//           <a href="#">
+//             <div className='producto_img'>
+//               <img src={IMG} alt="" />
+//             </div>
+//           </a>
+//           <div className="producto_footer">
+//             <h1> Title </h1>
+//             <p> Categoria</p>
+//             <p className='price'> $250</p>
+//           </div>
+//           <div className="buttom">
+//             <button className='btn'>
+//               Añadir al carrito
+//             </button>
+//             <div>
+//               <a href="#" className='btn'> Vista</a>
+//             </div>
+//           </div>
+//         </div>
 
 
 
@@ -134,30 +100,64 @@ export const ProductosLista = () => {
 
 
 
-        <div className='producto'>
-          <a href="#">
-            <div className='producto_img'>
-              <img src={IMG} alt="" />
-            </div>
-          </a>
-          <div className="producto_footer">
-            <h1> Title </h1>
-            <p> Categoria</p>
-            <p className='price'> $250</p>
-          </div>
-          <div className="buttom">
-            <button className='btn'>
-              Añadir al carrito
-            </button>
-            <div>
-              <a href="#" className='btn'> Vista</a>
-            </div>
-          </div>
-        </div>
+//         <div className='producto'>
+//           <a href="#">
+//             <div className='producto_img'>
+//               <img src={IMG} alt="" />
+//             </div>
+//           </a>
+//           <div className="producto_footer">
+//             <h1> Title </h1>
+//             <p> Categoria</p>
+//             <p className='price'> $250</p>
+//           </div>
+//           <div className="buttom">
+//             <button className='btn'>
+//               Añadir al carrito
+//             </button>
+//             <div>
+//               <a href="#" className='btn'> Vista</a>
+//             </div>
+//           </div>
+//         </div>
 
 
-      </div>
 
-    </>
-  )
-}
+
+
+
+
+
+
+
+
+
+
+
+//         <div className='producto'>
+//           <a href="#">
+//             <div className='producto_img'>
+//               <img src={IMG} alt="" />
+//             </div>
+//           </a>
+//           <div className="producto_footer">
+//             <h1> Title </h1>
+//             <p> Categoria</p>
+//             <p className='price'> $250</p>
+//           </div>
+//           <div className="buttom">
+//             <button className='btn'>
+//               Añadir al carrito
+//             </button>
+//             <div>
+//               <a href="#" className='btn'> Vista</a>
+//             </div>
+//           </div>
+//         </div>
+
+
+//       </div>
+
+//     </>
+//   )
+// }

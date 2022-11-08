@@ -51,7 +51,5 @@ console.log(products)
     return (
         <ItemList products={products}/>
 
-
-
     )
 }

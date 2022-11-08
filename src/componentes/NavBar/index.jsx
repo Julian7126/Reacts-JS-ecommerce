@@ -16,11 +16,11 @@ const NavBar = () => {
 
                     
                     
-                    <a href="#">
+                    {/* <a href="#"> */}
                         <div className="Logo">
                             <img src={Satan} alt="Logo" width={75} />
                         </div>
-                    </a>
+                    {/* </a> */}
 
         <ul>
                     <li>
@@ -30,7 +30,7 @@ const NavBar = () => {
                         <Link to="/category/electronics"> Electronic </Link>
                     </li>
                     <li>
-                        <Link to="/category/jewelery"> Jewelery  </Link>
+                        <Link to="/category/jewelery"> ewelery  </Link>
                     </li>
         </ul>
         <CartWidget/>
