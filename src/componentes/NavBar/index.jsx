@@ -30,7 +30,7 @@ const NavBar = () => {
                         <Link to="/category/electronics"> Electronic </Link>
                     </li>
                     <li>
-                        <Link to="/category/jewelery"> ewelery  </Link>
+                        <Link to="/category/jewelery"> Jewelery  </Link>
                     </li>
         </ul>
         <CartWidget/>

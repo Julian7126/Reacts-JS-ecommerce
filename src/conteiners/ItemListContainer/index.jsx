@@ -30,8 +30,7 @@ useEffect (() => {
          }
 
         const data = await response.json();
-        console.log(data);
-        setProducts(data.results)
+        setProducts(data)
         
         } catch (error) {
                     
