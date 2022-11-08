@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import ItemDetail from "../../components/ItemDetail";
+import ItemDetail from "../../componentes/ItemDetail";
+
 
 const ItemDetailContainer = () => {
 
