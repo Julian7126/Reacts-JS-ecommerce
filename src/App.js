@@ -1,16 +1,20 @@
 import  React   from 'react';
-// import { ProductosLista } from "./componentes/productos/index";
 import 'boxicons';
 import './index.css';
 import Router from './routes';
+// import ThemeProvider from './contexts/Themes';
 
 
 
 function App() {
   return (
     <div className='App'>
-    {/* <ProductosLista/> */}
+
+
+    {/* <ThemeProvider> */}
     <Router/>
+    {/* </ThemeProvider> */}
+
 
     </div>
   );

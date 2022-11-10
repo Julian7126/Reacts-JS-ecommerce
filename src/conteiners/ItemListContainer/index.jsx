@@ -10,7 +10,7 @@ export default function ItemListConteiner ({greeting}) {
 
     const [products, setProducts] = useState([])
     
-    const{categoryID}= useParams()
+    const{categoryId}= useParams()
 
 
 useEffect (() => {
@@ -19,13 +19,17 @@ useEffect (() => {
         try {
             let response; 
             
-        if(categoryID) {  
+        if(categoryId) {  
        
-            response = await fetch('https://fakestoreapi.com/products/category/electronics')
+            // response = await fetch(`https://fakestoreapi.com/products/categories/${categoryId}`)
+                response = await fetch(`https://fakestoreapi.com/products/category/electronics`)
+            
         
          } else{
 
-            response = await fetch('https://fakestoreapi.com/products/category/jewelery')
+            // response = await fetch(`https://fakestoreapi.com/products/categories`)
+            response = await fetch(`https://fakestoreapi.com/products/category/jewelery`)
+            
 
          }
 
@@ -37,7 +41,7 @@ useEffect (() => {
         }
     } )()
 
-},   [])
+},   [categoryId])
 
 console.log(products)
 

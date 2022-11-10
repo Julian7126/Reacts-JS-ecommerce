@@ -19,11 +19,11 @@ const navigate= useNavigate()
   
 <div className ='productos' onClick={navigateDetail}>
 <div className='producto'>
-<a href="#">
+
   <div className='producto_img'>
     <img src={product.image} alt="/" />
   </div>
-</a>
+
 <div className="producto_footer">
   <p key={product.id}>{product.title}</p>
   <p> Categoria</p>
@@ -34,7 +34,7 @@ const navigate= useNavigate()
     Añadir al carrito
   </button>
   <div>
-    <a href="#" className='btn'> Vista</a>
+    <a className='btn'> Vista</a>
   </div>
 </div>
 </div> 
