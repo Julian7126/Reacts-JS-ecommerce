@@ -1,6 +1,7 @@
 
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import '../Item/styles.css'
 
 
 //Card
@@ -15,11 +16,37 @@ const navigate= useNavigate()
 
 
   return (
-    <div onClick={navigateDetail}>
-    <img src={product.image} alt="product"/>
-    <p key={product.id}>{product.title}, price: {product.price}</p>
-    </div>
+  
+<div className ='productos' onClick={navigateDetail}>
+<div className='producto'>
+<a href="#">
+  <div className='producto_img'>
+    <img src={product.image} alt="/" />
+  </div>
+</a>
+<div className="producto_footer">
+  <p key={product.id}>{product.title}</p>
+  <p> Categoria</p>
+  <p className='price'>{product.price}</p>
+</div>
+<div className="buttom">
+  <button className='btn'>
+    Añadir al carrito
+  </button>
+  <div>
+    <a href="#" className='btn'> Vista</a>
+  </div>
+</div>
+</div> 
+</div> 
+
+
+
+
+
   )
 }
 
 export default Item
+
+
