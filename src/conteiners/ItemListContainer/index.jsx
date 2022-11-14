@@ -21,14 +21,13 @@ useEffect (() => {
             
         if(categoryId) {  
        
-            // response = await fetch(`https://fakestoreapi.com/products/categories/${categoryId}`)
-                response = await fetch(`https://fakestoreapi.com/products/category/electronics`)
+            response = await fetch(`https://fakestoreapi.com/products/category/${categoryId}`)
+            
             
         
          } else{
 
-            // response = await fetch(`https://fakestoreapi.com/products/categories`)
-            response = await fetch(`https://fakestoreapi.com/products/category/jewelery`)
+            response = await fetch(`https://fakestoreapi.com/products`)
             
 
          }
