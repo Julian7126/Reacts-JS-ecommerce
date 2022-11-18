@@ -7,3 +7,7 @@
     align-items: center;
     gap: 50px;
 }
+.item-text{
+display: flex;
+flex-direction: column;
+}
