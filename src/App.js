@@ -11,9 +11,9 @@ function App() {
     <div className='App'>
 
 
-    {/* <ThemeProvider> */}
+    
     <Router/>
-    {/* </ThemeProvider> */}
+   
 
 
     </div>

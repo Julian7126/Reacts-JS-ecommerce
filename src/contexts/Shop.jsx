@@ -1,6 +1,5 @@
 import { createContext, useState } from 'react';
 import React from 'react'
-import Item from '../componentes/Item';
 
 export const Shop = createContext({});
 
@@ -13,10 +12,15 @@ const ShopProvider = ({children}) => {
 
     const flagRepeated = isProductRepeated(productToAdd.id);
         if (flagRepeated) {
-        //    setCart(producto.map(product => {
-        //     return products.id === Item.id ? {...products, quantity: product.quantity + quantity} : product
-        // })) ;
-     
+
+         const productoRepetidoModificado = products.find((productInCart) => productInCart.id === productToAdd.id);
+
+          productoRepetidoModificado.quantity += productToAdd.quantity;
+
+         const productosCartSinRepetido = products.filter((productsInCart) => productsInCart.id !== productToAdd.id);
+
+         setProducts([ ...productosCartSinRepetido,productoRepetidoModificado,]);
+
 
         } else {
 
@@ -29,15 +33,48 @@ const ShopProvider = ({children}) => {
         return products.some(product => product.id === id);
      }
 
-     const clearCart = () => setProducts([]);
-     const removeProducto = () => setProducts([product => product.id === products]);
-     // calculo del total
-     //calculo del total de item del carrito 
+
+
+
+     const removeProduct = (id) => {
+        const productosCart = products.filter(
+            (productsInCart) => productsInCart.id !== id
+        );
+        setProducts(productosCart);
+    };
+
+
+
+
+
+      const clearCart = () => {
+         setProducts([]);
+      };
+
+
+
+      
+
+      const calculateTotal = () => {
+         const total = products.reduce(
+             (acc, productoActual) =>
+                 (acc += productoActual.quantity * productoActual.price),
+             0
+         );
+         return total;
+     };
+ 
+
+     const totalItemsCart = () => {
+      let total = 0;
+      products.forEach((product) => (total += product.quantity));
+      return total;
+  };
 
   return (
 
     <Shop.Provider
-     value = {{products, addProduct, clearCart, removeProducto}}>
+     value = {{products, addProduct, clearCart, removeProduct, calculateTotal, totalItemsCart}}>
         {children}
     </Shop.Provider>    
     

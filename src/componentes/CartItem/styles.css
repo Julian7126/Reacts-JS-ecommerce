@@ -1,0 +1,9 @@
+.item-carrito{
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 40px;
+    gap: 40px;
+    align-items: center;
+}

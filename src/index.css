@@ -28,6 +28,7 @@
 
 
 header {
+
   width: 97%;
   min-height: 100px;
   max-width: 1530px;
@@ -36,7 +37,6 @@ header {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  position: fixed;
   box-sizing: border-box;
   background-color:white ;
   box-shadow: 0 5px 10px black;

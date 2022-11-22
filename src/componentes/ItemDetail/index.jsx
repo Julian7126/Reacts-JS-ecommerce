@@ -4,6 +4,7 @@ import { Shop }  from "../../contexts/Shop";
 import React from 'react'
 import "./styles.css";
 import ItemCount from '../ItemCount';
+import { useNavigate } from 'react-router-dom';
 
 const ItemDetail = ({producto}) => {
 
@@ -11,10 +12,17 @@ const ItemDetail = ({producto}) => {
 
 const [quantityItemDetail, setQuantityItemDetail] = useState(0);
 
+const navigate = useNavigate();
+
 const confirmPurchase = (quantity) => {
   console.log(quantity);
   addProduct({...producto, quantity})
   setQuantityItemDetail(quantity)
+}
+
+const handleNavigate = () =>{
+  navigate('/cart')
+
 }
 
   return (
@@ -30,7 +38,7 @@ const confirmPurchase = (quantity) => {
 
       { quantityItemDetail ? 
 
-      <button> Buy </button>
+      <button onClick={handleNavigate}> Buy </button>
 
        : 
 
