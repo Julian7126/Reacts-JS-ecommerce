@@ -19,7 +19,7 @@ const CartItem = ({item}) => {
         <h1>{item.title}</h1>
         <h2>{item.price}</h2>
         <p>{item.count}</p>
-        <box-icon onClick={handleRemove} name='x-circle'></box-icon>
+        <box-icon onClick={handleRemove} name='x-circle' ></box-icon>
     </div>
   )
 }
