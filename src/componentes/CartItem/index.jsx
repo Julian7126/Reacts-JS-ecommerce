@@ -18,7 +18,7 @@ const CartItem = ({item}) => {
         <img className='image-carrito' src={item.image} width={200} alt="" />
         <h1>{item.title}</h1>
         <h2>{item.price}</h2>
-        <p>{item.count}</p>
+        <p>{item.quantity}</p>
         <box-icon onClick={handleRemove} name='x-circle' ></box-icon>
     </div>
   )

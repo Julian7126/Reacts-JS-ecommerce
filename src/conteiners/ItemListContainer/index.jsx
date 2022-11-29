@@ -13,6 +13,7 @@ export default function ItemListConteiner ({greeting}) {
 
     const [products, setProducts] = useState([])
     
+    
     const{categoryId}= useParams()
 
 
@@ -20,7 +21,8 @@ useEffect (() => {
 
     (async() => {
         try {
-            let response; 
+            
+            // let response; 
             
         // if(categoryId) {  
        
@@ -72,10 +74,16 @@ console.log(products)
 
 
 
+
+
    
 
     return (
-        <ItemList products={products}/>
+        <>
+                <ItemList products={products} />
+            
+        </>
+        
 
     )
 }
