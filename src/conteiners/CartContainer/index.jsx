@@ -3,7 +3,6 @@ import { useContext } from 'react'
 import CartItem from '../../componentes/CartItem';
 import { Shop } from '../../contexts/Shop'
 import generateOrderObject from '../../service/generateOrdenObject';
-import {Formik , Form , Field} from 'formik';
 import { doc, getDoc, updateDoc, collection, addDoc ,} from "firebase/firestore";
 import { db } from "../../firebase/config";
 
@@ -69,7 +68,6 @@ const CartContainer = () => {
             }
         })()
        
-    
     }
 
     return (
