@@ -5,6 +5,8 @@ import { Shop } from '../../contexts/Shop'
 import generateOrderObject from '../../service/generateOrdenObject';
 import { doc, getDoc, updateDoc, collection, addDoc ,} from "firebase/firestore";
 import { db } from "../../firebase/config";
+import { Formulario }  from '../../componentes/Formularios';
+
 
 
 
@@ -16,20 +18,13 @@ const CartContainer = () => {
     const confirmPurchase = () => {
         (async ()=> {
 
-            const nombre = "Julian"
-            const telefono = 3513296894
-            const email = "julibischoff@gmail.com"
+            
     
-            const generatedOrder = generateOrderObject(
-                                            nombre,
-                                            email,
-                                            telefono,
-                                            products,
-                                            calculateTotal())
+            const generatedOrder = generateOrderObject( Formulario() ,products,calculateTotal())
             console.log(generatedOrder);
             
             let productOutOfStock = []
-//tock de los productos en el carrito
+//stock de los productos en el carrito
             for (const productInCart of products) {
                 const docRef = doc(db, "products", productInCart.id);
                 const docSnap = await getDoc(docRef);
@@ -64,19 +59,27 @@ const CartContainer = () => {
                 }
             }
             else {
-                alert("Productos fuera del estoy")
+                alert("Productos fuera del stock")
             }
         })()
        
     }
 
-    return (
+    //Mensaje si no hay nada en el carrito
+   
+
+    return products.length > 0 ? (
         <div>
             {products.map(product => {
                 return <CartItem  key={product.id} item={product}/>
             })}
+
+            
             <button onClick={confirmPurchase}> Buy Now! </button>
+
         </div>
+    ):(
+        <h2> Your Cart is empty</h2>
     )
 }
 
